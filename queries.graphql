@@ -1,0 +1,40 @@
+query {
+  getCustomerOrders(customerId: "fbcfbac1-7731-4076-8e19-eef4717da14b", page: 1, limit: 10) {
+    _id
+    totalAmount
+    orderDate
+    status
+  }
+}
+
+query {
+  getCustomerSpending(customerId: "fbcfbac1-7731-4076-8e19-eef4717da14b") {
+    customerId
+    totalSpent
+    averageOrderValue
+    lastOrderDate
+  }
+}
+
+query {
+  getTopSellingProducts(limit: 10
+  ) {
+    productId
+    name
+    totalSold
+  }
+}
+
+query{
+  getSalesAnalytics(startDate: "2024-12-08", endDate: "2025-02-07") {
+    totalRevenue
+    completedOrders
+    categoryBreakdown {
+      category
+      revenue
+    }
+  }
+} 
+
+
+
