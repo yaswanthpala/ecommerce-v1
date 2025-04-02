@@ -15,7 +15,7 @@ mongoimport --uri="mongodb://localhost:27017" --db=ecommerce --collection=Produc
 
 Import manually for **Orders** through insertMany in Mongosh shell  based on provided Data or can also be done by small script.
 
-Instructions to RUN Server:
+STEPS to RUN Server:
 
 1.) CLONE THE REPOSITORY : git clone https://github.com/yaswanthpala/ecommerce-v1.git
 
