@@ -4,6 +4,8 @@
 Instructions:
 
 1.) CLONE THE REPOSITORY : git clone https://github.com/yaswanthpala/ecommerce-v1.git
+
+
 2.) RUN : npm install      
       ;  if any issue with use peer dependency conflicts use to bypass them: npm install --legacy-peer-deps
 3.) RUN: npm install pm2@latest -g
