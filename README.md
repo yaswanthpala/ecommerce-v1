@@ -4,7 +4,6 @@
 Instructions:
 
 1.) CLONE THE REPOSITORY : git clone <Repository_URL>
-2.) cd ecommerce-GraphQL-node
 3.) npm install      
       ;  if any issue with use peer dependency conflicts use to bypass them: npm install --legacy-peer-deps
 5.) **RUN COMMAND : pm2 start server.js  
