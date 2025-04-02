@@ -28,7 +28,6 @@ STEPS to RUN Server:
 4.) **RUN COMMAND : pm2 start server.js  
 
 TO RUN using Cluster Module with full utilisation of core:  pm2 start server.js -i max   
-; (OR) ; pm2 start server.js -i max
 
 To STOP server : pm2 stop server.js
 To Delete pm2 process : pm2 delete server.js
