@@ -34,7 +34,39 @@ query{
       revenue
     }
   }
-} 
+}
+
+mutation createOrder($customerId: String!, $products: [ProductInput]!) {
+  createOrder(customerId: $customerId, products: $products) {
+    _id
+    customerId
+    products {
+      productId
+      quantity
+      priceAtPurchase
+    }
+    totalAmount
+    orderDate
+    status
+  }
+}
+
+Query variables:
+{
+  "customerId": "a274321b-304d-49c8-ad20-3f7c3b3073fc",
+  "products": [
+    {
+      "productId": "61d60456-49df-483e-8dde-170938cd4caa",
+      "quantity": 2,
+      "priceAtPurchase": 452.67
+    },
+    {
+      "productId": "f5abb3ad-a6c8-482e-a393-6a4598806404",
+      "quantity": 1,
+      "priceAtPurchase": 420.0
+    }
+  ]
+}
 
 
 
